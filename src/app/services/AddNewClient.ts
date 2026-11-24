@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function AddClientService(data: any) {
   const response = await axios.post(
-    ` http://localhost:3000/homepage/AddClient`,
+    ` https://backend-projeto-estoque.onrender.com/homepage/AddClient`,
     data
   );
   return response;

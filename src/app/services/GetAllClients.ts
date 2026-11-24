@@ -7,7 +7,7 @@ export async function GetAllClient<T>(
   busca: string
 ) {
   const response = await axios.get<T>(
-    ` http://localhost:3000/homepage/findClient/${page}/${limit}/${filtro}`,
+    ` https://backend-projeto-estoque.onrender.com/homepage/findClient/${page}/${limit}/${filtro}`,
     {
       params: {
         search: busca,

@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function AddSuplierService(data: any) {
   const response = await axios.post(
-    " http://localhost:3000/homepage/addFornecedor",
+    " https://backend-projeto-estoque.onrender.com/homepage/addFornecedor",
     data
   );
   return response;

@@ -3,7 +3,7 @@ import { GetAllProducts } from "./GetAllProducts";
 
 export async function AddProductService(data: any) {
   const response = await axios.post(
-    ` http://localhost:3000/homepage/addProduct`,
+    ` https://backend-projeto-estoque.onrender.com/homepage/addProduct`,
     data
   );
   return response;

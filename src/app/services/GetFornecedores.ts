@@ -7,7 +7,7 @@ export async function GetAllFornecedores<T>(
 ) {
   console.log(search);
   const response = await axios.get<T>(
-    ` http://localhost:3000/homepage/GetFornecedor/${page}/${limit}`,
+    ` https://backend-projeto-estoque.onrender.com/homepage/GetFornecedor/${page}/${limit}`,
     {
       params: {
         search: search,

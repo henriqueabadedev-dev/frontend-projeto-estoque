@@ -7,7 +7,7 @@ export async function GetAllProducts<T>(
   valuesearch: string
 ) {
   const response = await axios.get<T>(
-    ` http://localhost:3000/homepage/allProducts/${page}/${limit}`,
+    ` https://backend-projeto-estoque.onrender.com/homepage/allProducts/${page}/${limit}`,
     {
       params: {
         filtro: filter,

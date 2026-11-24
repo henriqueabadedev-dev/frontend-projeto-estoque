@@ -6,7 +6,7 @@ export async function GetRelatorioVendas<T>(
   query: string
 ) {
   const response = await axios.get<T>(
-    ` http://localhost:3000/homepage/findRelatorioVendas/${page}/${limit}`,
+    ` https://backend-projeto-estoque.onrender.com/homepage/findRelatorioVendas/${page}/${limit}`,
     {
       params: {
         search: query,

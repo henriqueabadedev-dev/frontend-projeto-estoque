@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function registerUser(data: any) {
   const response = await axios.post(
-    " http://localhost:3000/register",
+    " https://backend-projeto-estoque.onrender.com/register",
     data,
     {
       withCredentials: true,
@@ -13,7 +13,7 @@ export async function registerUser(data: any) {
 
 export async function loginUser(data: any) {
   const response = await axios.post(
-    " http://localhost:3000/login",
+    " https://backend-projeto-estoque.onrender.com/login",
     data,
     {
       withCredentials: true,
@@ -24,7 +24,7 @@ export async function loginUser(data: any) {
 
 export async function AuthUser() {
   const response = await axios.post(
-    " http://localhost:3000/login/auth",
+    " https://backend-projeto-estoque.onrender.com/login/auth",
     {},
     {
       withCredentials: true,
